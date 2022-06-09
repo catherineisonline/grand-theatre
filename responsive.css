@@ -1,0 +1,328 @@
+/******  UNDER 480px ******/
+
+@media (max-width: 480px) {
+  .wrapper {
+    height: 1100px;
+  }
+
+  .landing {
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 90px;
+    grid-gap: 20px;
+  }
+
+  .slider-image {
+    height: 500px;
+  }
+
+  div.panel-grid {
+    display: none;
+  }
+
+  .column-3 {
+    background: url(theater.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    box-shadow: 2px 2px 2px #242322;
+    opacity: 0.7;
+    width: 100%;
+    max-width: 389px;
+    height: 300px;
+  }
+
+  .second-block {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 10px;
+  }
+  .work-showcase {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .widget {
+    padding: 20px;
+  }
+  .information {
+    font-size: 15px;
+  }
+  .partner-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contact-grid {
+    grid-template-columns: repeat(1, 1fr);
+    width: 100%;
+    max-width: 300px;
+    grid-gap: 10px;
+  }
+  .form {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    margin-top: 30px;
+  }
+
+  .form .fullname {
+    grid-column: 1 / span 2;
+    grid-row: 1;
+  }
+  .form .company {
+    grid-column: 1 / span 2;
+    grid-row: 3;
+  }
+  .form .message {
+    grid-column: 1 / span 2;
+    grid-row: 5;
+  }
+  .form .number {
+    grid-column: 1 / span 2;
+    grid-row: 4;
+  }
+  .form .email {
+    grid-column: 1 / span 2;
+    grid-row: 2;
+  }
+
+  .form .privacy {
+    grid-column: span 2;
+    grid-row: 6;
+  }
+
+  .form.submit {
+    grid-row: 7;
+    position: relative;
+  }
+  .submit button {
+    position: absolute;
+    margin: 0;
+  }
+
+  #number {
+    width: 100%;
+    max-width: 180px;
+    height: 35px;
+    left: 785px;
+    top: 4089px;
+    background: #444444;
+    border: 1px solid #616161;
+    box-sizing: border-box;
+  }
+
+  .form .message {
+    margin-right: 0;
+  }
+  textarea#message {
+    max-width: 180px;
+    height: 80px;
+  }
+
+  .alt-text {
+    font-size: 10px;
+    letter-spacing: 0.3em;
+  }
+
+  .hide .fa-search {
+    position: relative;
+    color: #ffffff;
+    font-size: 20px;
+    background: #d1a954;
+    border: 20px solid #d1a954;
+    border-radius: 40px;
+    top: 60px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in;
+  }
+  .right {
+    right: 400px;
+  }
+
+  .left {
+    left: 400px;
+  }
+}
+
+/******  UNDER 768px ******/
+
+@media (max-width: 768px) {
+  .wrapper {
+    height: 1100px;
+  }
+
+  .landing {
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 90px;
+    grid-gap: 20px;
+  }
+
+  .slider-image {
+    height: 500px;
+  }
+
+  div.panel-grid {
+    display: none;
+  }
+
+  .column-3 {
+    background: url(theater.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    box-shadow: 2px 2px 2px #242322;
+    opacity: 0.7;
+    width: 100%;
+    max-width: 389px;
+    height: 300px;
+  }
+
+  .second-block {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 10px;
+  }
+  .work-showcase {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .widget {
+    padding: 20px;
+  }
+  .information {
+    font-size: 15px;
+  }
+  .partner-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contact-grid {
+    grid-template-columns: repeat(1, 1fr);
+    width: 100%;
+    max-width: 300px;
+    grid-gap: 10px;
+  }
+  .form {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 50px;
+    margin-top: 30px;
+  }
+
+  .form .fullname {
+    grid-column: 1 / span 3;
+    grid-row: 1;
+  }
+  .form .company {
+    grid-column: 2 / span 6;
+    grid-row: 1;
+  }
+
+  .form .number {
+    grid-column: 2 / span 2;
+    grid-row: 2;
+  }
+  .form .email {
+    grid-column: 1 / span 1;
+    grid-row: 2;
+  }
+  .form .message {
+    grid-column: 1 / span 2;
+    grid-row: 3;
+  }
+
+  .form .privacy {
+    grid-column: span 2;
+    grid-row: 4;
+  }
+
+  .form.submit {
+    grid-column: 1 / span 2;
+    grid-row: 5;
+    position: relative;
+  }
+  .submit button {
+    position: absolute;
+    margin: 0;
+  }
+
+  .form .message {
+    margin-right: 0;
+  }
+  textarea#message {
+    max-width: 180px;
+    height: 80px;
+  }
+
+  #company {
+    width: 100%;
+    max-width: 180px;
+    height: 35px;
+    left: 785px;
+    top: 4089px;
+    background: #444444;
+    border: 1px solid #616161;
+    box-sizing: border-box;
+  }
+
+  .alt-text {
+    font-size: 10px;
+    letter-spacing: 0.3em;
+  }
+
+  .hide .fa-search {
+    position: relative;
+    color: #ffffff;
+    font-size: 20px;
+    background: #d1a954;
+    border: 20px solid #d1a954;
+    border-radius: 40px;
+    top: 60px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in;
+  }
+  .right {
+    right: 400px;
+  }
+
+  .left {
+    left: 400px;
+  }
+}
+
+/******  UNDER 1148px ******/
+
+@media (min-width: 922px) and (max-width: 1148px) {
+  .wrapper {
+    height: 630px;
+  }
+  .landing {
+    width: 100%;
+    max-width: 600px;
+    height: 200px;
+  }
+
+  .info-block h2 {
+    font-size: 40px;
+  }
+
+  .info-block p {
+    font-size: 12px;
+  }
+
+  .slider-image {
+    height: 300px;
+    background-size: contain;
+  }
+
+  .right {
+    right: 210px;
+  }
+
+  .left {
+    left: 210px;
+  }
+}
+
+/******  OVER 1312px ******/
+
+@media (min-width: 1312px) {
+}
