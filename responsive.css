@@ -20,7 +20,7 @@
   }
 
   .column-3 {
-    background: url(theater.jpg);
+    background-image: url('images/theater.jpg');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -164,7 +164,7 @@
   }
 
   .column-3 {
-    background: url(theater.jpg);
+    background-image: url('images/theater.jpg');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
