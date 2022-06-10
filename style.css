@@ -303,7 +303,7 @@ button.btn:focus {
   color: #d1a954;
 }
 
-div.panel-grid {
+.panel-grid {
   display: inline-grid;
   grid-template-columns: repeat(5, 1fr);
   transform: rotate(-90deg);
