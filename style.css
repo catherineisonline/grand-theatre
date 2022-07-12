@@ -372,43 +372,28 @@ span.contact {
 .alt-text {
   position: absolute;
   color: #ffffff;
-  font-family: "Open Sans Condensed", sans-serif;
-  font-style: normal;
   text-transform: uppercase;
   transform: rotate(-90deg);
   font-size: 1rem;
   top: 70%;
   letter-spacing: 0.1em;
   font-weight: bold;
-  text-align: center;
   opacity: 0.8;
 }
 
-.one,
-.two {
-  bottom: 50px;
-}
-
-.three,
-.four {
-  bottom: 40px;
-}
-
-.slider-1:hover .describtion-1,
-.slider-2:hover .describtion-2,
-.slider-3:hover .describtion-3,
-.slider-4:hover .describtion-4,
+.slider-1:hover .slider-desc,
+.slider-2:hover .slider-desc,
+.slider-3:hover .slider-desc,
+.slider-4:hover .slider-desc,
 .slider-1:hover .alt-text,
 .slider-2:hover .alt-text,
 .slider-3:hover .alt-text,
 .slider-4:hover .alt-text {
   visibility: hidden;
+  transition: all ease-in-out 0.1s;
 }
 
-.slider-1 .describtion-1,
-.slider-2 .describtion-2,
-.slider-3 .describtion-3,
-.slider-4 .describtion-4 {
+.slider-desc {
   position: absolute;
   letter-spacing: 0.1em;
   font-weight: bold;
@@ -416,13 +401,8 @@ span.contact {
   font-size: 15px;
   font-family: "Open Sans Condensed", sans-serif;
   text-transform: uppercase;
-}
-
-.describtion-1,
-.describtion-2,
-.describtion-3,
-.describtion-4 {
   padding: 10px;
+  transition: all ease-in-out 0.1s;
 }
 
 /* WIDGET */
