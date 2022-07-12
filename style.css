@@ -208,9 +208,6 @@ nav ul li a:hover {
   grid-template-columns: repeat(2, 1fr);
   color: #ffffff;
   width: 80%;
-  height: 20rem;
-  max-height: 100%;
-
 }
 
 .about section {
@@ -246,7 +243,7 @@ span.contact,
 .line .fa-minus {
   font-style: normal;
   font-weight: bold;
-  font-size: 15px;
+  font-size: 1rem;
   text-transform: uppercase;
   color: #c4c4c4;
   position: absolute;
@@ -254,19 +251,18 @@ span.contact,
 }
 
 .line .fa-minus {
-  font-size: 30px;
+  font-size: 1rem;
 }
 
 span.contact {
-  margin-left: -80px;
-  margin-top: 5px;
+  margin-left: -5rem;
 }
 
 .media .fa-facebook,
 .media .fa-instagram,
 .media .fa-twitter {
   color: #c4c4c4;
-  font-size: 18px;
+  font-size: 1.2rem;
 }
 
 .media .fa-facebook:hover,
@@ -277,27 +273,25 @@ span.contact {
   transform: scale(1.5);
 }
 
-/* WORK SHOWCASE */
-
-.cards {
-  position: relative;
-  text-align: center;
-}
-
-.cards .titles::first-letter {
-  color: #d1a954;
-}
-
+/* Work Showcase */
 .work-showcase {
-  display: inline-grid;
+  display: grid;
   grid-template-columns: repeat(4, 1fr);
-  width: 100%;
-  max-width: 900px;
-  height: 350px;
-  justify-items: center;
-  position: relative;
+  max-width: 100%;
+  width: 80%;
+  height: 20rem;
+  max-height: 100%;
 }
-
+.slider-1,
+.slider-2,
+.slider-3,
+.slider-4 {
+  position: relative;
+  background-size: cover;
+  width: 100%;
+  max-width: 100%;
+  transition: all ease-in-out 0.3s;
+}
 .slider-1 {
   background: linear-gradient(
       0deg,
@@ -305,9 +299,6 @@ span.contact {
       rgba(51, 51, 51, 0.65)
     ),
     url("images/slider1.jpg");
-  background-size: cover;
-  width: 100%;
-  max-width: 100%;
 }
 
 .slider-2 {
@@ -317,9 +308,6 @@ span.contact {
       rgba(51, 51, 51, 0.65)
     ),
     url("images/slider2.jpg");
-  background-size: cover;
-  width: 100%;
-  max-width: 100%;
 }
 .slider-3 {
   background: linear-gradient(
@@ -328,9 +316,6 @@ span.contact {
       rgba(51, 51, 51, 0.65)
     ),
     url("images/slider3.jpg");
-  background-size: cover;
-  width: 100%;
-  max-width: 100%;
 }
 .slider-4 {
   background: linear-gradient(
@@ -339,26 +324,25 @@ span.contact {
       rgba(51, 51, 51, 0.65)
     ),
     url("images/slider4.jpg");
-  background-size: cover;
-  width: 100%;
-  max-width: 100%;
 }
-
-.slider-1:hover {
-  background: url("images/slider1.jpg");
+.slider-1:hover,
+.slider-2:hover,
+.slider-3:hover,
+.slider-4:hover {
+  transition: all ease-in-out 0.2s;
   background-size: cover;
+}
+.slider-1:hover {
+  background-image: url("images/slider1.jpg");
 }
 .slider-2:hover {
-  background: url("images/slider2.jpg");
-  background-size: cover;
+  background-image: url("images/slider2.jpg");
 }
 .slider-3:hover {
-  background: url("images/slider3.jpg");
-  background-size: cover;
+  background-image: url("images/slider3.jpg");
 }
 .slider-4:hover {
-  background: url("images/slider4.jpg");
-  background-size: cover;
+  background-image: url("images/slider4.jpg");
 }
 
 .slider-1:hover .fa-search,
@@ -368,16 +352,21 @@ span.contact {
   opacity: 1;
 }
 
-.hide .fa-search {
-  position: relative;
+.hide a {
+  text-decoration: none;
+  position: absolute;
+  top: 40%;
+  left: 40%;
   color: #ffffff;
-  font-size: 25px;
-  background: #d1a954;
-  border: 20px solid #d1a954;
+}
+
+.hide .fa-search {
+  padding: 1rem;
+  font-size: 1.4rem;
   border-radius: 50px;
-  top: 160px;
-  opacity: 0;
+  background-color: #d1a954;
   transition: opacity 0.3s ease-in;
+  opacity: 0;
 }
 
 .alt-text {
@@ -387,8 +376,8 @@ span.contact {
   font-style: normal;
   text-transform: uppercase;
   transform: rotate(-90deg);
-  font-size: 13px;
-  top: 250px;
+  font-size: 1rem;
+  top: 70%;
   letter-spacing: 0.1em;
   font-weight: bold;
   text-align: center;
@@ -405,10 +394,6 @@ span.contact {
   bottom: 40px;
 }
 
-.describtion {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-}
 .slider-1:hover .describtion-1,
 .slider-2:hover .describtion-2,
 .slider-3:hover .describtion-3,
