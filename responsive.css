@@ -9,22 +9,6 @@
     display: none;
   }
 
-  .column-3 {
-    background-image: url("images/theater.jpg");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    box-shadow: 2px 2px 2px #242322;
-    opacity: 0.7;
-    width: 100%;
-    max-width: 389px;
-    height: 300px;
-  }
-
-  .second-block {
-    grid-template-columns: repeat(1, 1fr);
-    grid-gap: 10px;
-  }
   .work-showcase {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -123,21 +107,18 @@
     opacity: 0;
     transition: opacity 0.3s ease-in;
   }
-  .right {
+  /* .right {
     right: 400px;
   }
 
   .left {
     left: 400px;
-  }
+  } */
 }
 
 /******  UNDER 768px ******/
 
 @media (max-width: 768px) {
-  /* .slider-image {
-    height: 500px;
-  } */
 
   div.panel-grid {
     display: none;
@@ -155,10 +136,6 @@
     height: 300px;
   }
 
-  .second-block {
-    grid-template-columns: repeat(1, 1fr);
-    grid-gap: 10px;
-  }
   .work-showcase {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -259,13 +236,13 @@
     opacity: 0;
     transition: opacity 0.3s ease-in;
   }
-  .right {
+  /* .right {
     right: 400px;
   }
 
   .left {
     left: 400px;
-  }
+  } */
 }
 
 /******  UNDER 1148px ******/
@@ -276,13 +253,13 @@
     background-size: contain;
   } */
 
-  .right {
+  /* .right {
     right: 210px;
   }
 
   .left {
     left: 210px;
-  }
+  } */
 }
 
 /******  OVER 1312px ******/
