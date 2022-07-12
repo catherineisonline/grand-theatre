@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed&display=swap" rel="stylesheet" />
   <link rel="icon" type="image/png" sizes="32x32" href="images/icon.png">
-
   <link type="text/css" href="style.css" rel="stylesheet" />
   <link type="text/css" href="responsive.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
@@ -18,26 +17,20 @@
 </head>
 
 <body>
-  <!-- NAVIGATION -->
-  <header class="wrapper">
-    <section class="navigation">
-      <nav id="sidebar">
-        <button class="hamburger" id="hamburger">
-          <i class="fas fa-bars"></i>
-        </button>
-
-        <ul class="nav-ul" id="nav-ul">
-          <li><a class="active" id="#homelink" href="#">Home</a></li>
-          <li><a data-scroll href="#about">About</a></li>
-          <li><a data-scroll href="#ourwork">Our Work</a></li>
-          <li><a data-scroll href="#partners">Partners</a></li>
-          <li><a data-scroll href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </section>
-
-    <!-- FIXED PANEL -->
-
+  <header>
+    <nav>
+      <button class="hamburger" id="hamburger">
+        <i class="fas fa-bars"></i>
+      </button>
+      <ul class="nav-ul" id="nav-ul">
+        <li><a class="active" id="#homelink" href="#">Home</a></li>
+        <li><a data-scroll href="#about">About</a></li>
+        <li><a data-scroll href="#ourwork">Our Work</a></li>
+        <li><a data-scroll href="#partners">Partners</a></li>
+        <li><a data-scroll href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <!-- Fixed Panel -->
     <section class="panel-grid">
       <section class="media">
         <span class="contact">LET'S CONNECT</span>
@@ -47,49 +40,44 @@
       </section>
 
       <section class="media">
-        <span><a href=""><i class="fab fa-facebook"></i></a></span>
+        <span><a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a></span>
       </section>
       <section class="media">
-        <span><a href=""><i class="fab fa-instagram"></i></a></span>
+        <span><a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a></span>
       </section>
       <section class="media">
-        <span><a href=""><i class="fab fa-twitter"></i></a></span>
+        <span><a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a></span>
       </section>
     </section>
-
     <!-- Block 1 -->
-
-    <section class="centeringabout">
-      <section class="landing">
-        <section class="info-block">
-          <h2>Grand Theatre</h2>
-          The Grand Theater is one of the oldest theatres across United
+    <section class="landing">
+      <section class="info-block">
+        <h2>Grand Theatre</h2>
+        <p> The Grand Theater is one of the oldest theatres across United
           States of America, which was founded in 1786. Since that time it
           was gaining popularity among people of any age. Today the Grand
           Theatre is one of the largest theatre buildings in America and
           Europe.
-          </p>
-          <button class="btn">READ</button>
+        </p>
+        <a href="/" class="read-more">READ</a>
+      </section>
+      <!-- Slider Container -->
+      <section class="slidercontainer">
+        <section class="showSlide fade">
+          <img class="slider-image" src="images/slider-1.png" alt="" />
+        </section>
+        <section class="showSlide fade">
+          <img class="slider-image" src="images/slider-2.jpg" alt="" />
         </section>
 
-        <section class="slidercontainer">
-          <section class="showSlide fade">
-            <img class="slider-image" src="images/slider-1.png" />
-          </section>
-          <section class="showSlide fade">
-            <img class="slider-image" src="images/slider-2.jpg" />
-          </section>
-
-          <section class="showSlide fade">
-            <img class="slider-image" src="images/slider-3.png" />
-          </section>
-          <section class="showSlide fade">
-            <img class="slider-image" src="images/slider-4.png" />
-          </section>
-          <!-- Navigation arrows -->
-          <a class="left" onclick="nextSlide(-1)">❯</a>
-          <a class="right" onclick="nextSlide(1)">❮</a>
+        <section class="showSlide fade">
+          <img class="slider-image" src="images/slider-3.png" alt="" />
         </section>
+        <section class="showSlide fade">
+          <img class="slider-image" src="images/slider-4.png" alt="" />
+        </section>
+        <a class="left" onclick="nextSlide(-1)">❯</a>
+        <a class="right" onclick="nextSlide(1)">❮</a>
       </section>
     </section>
   </header>

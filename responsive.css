@@ -1,26 +1,16 @@
 /******  UNDER 480px ******/
 
 @media (max-width: 480px) {
-  .wrapper {
-    height: 1100px;
-  }
-
-  .landing {
-    grid-template-columns: repeat(1, 1fr);
-    margin-top: 90px;
-    grid-gap: 20px;
-  }
-
-  .slider-image {
+  /* .slider-image {
     height: 500px;
-  }
+  } */
 
   div.panel-grid {
     display: none;
   }
 
   .column-3 {
-    background-image: url('images/theater.jpg');
+    background-image: url("images/theater.jpg");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -145,26 +135,16 @@
 /******  UNDER 768px ******/
 
 @media (max-width: 768px) {
-  .wrapper {
-    height: 1100px;
-  }
-
-  .landing {
-    grid-template-columns: repeat(1, 1fr);
-    margin-top: 90px;
-    grid-gap: 20px;
-  }
-
-  .slider-image {
+  /* .slider-image {
     height: 500px;
-  }
+  } */
 
   div.panel-grid {
     display: none;
   }
 
   .column-3 {
-    background-image: url('images/theater.jpg');
+    background-image: url("images/theater.jpg");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -291,27 +271,10 @@
 /******  UNDER 1148px ******/
 
 @media (min-width: 922px) and (max-width: 1148px) {
-  .wrapper {
-    height: 630px;
-  }
-  .landing {
-    width: 100%;
-    max-width: 600px;
-    height: 200px;
-  }
-
-  .info-block h2 {
-    font-size: 40px;
-  }
-
-  .info-block p {
-    font-size: 12px;
-  }
-
-  .slider-image {
+  /* .slider-image {
     height: 300px;
     background-size: contain;
-  }
+  } */
 
   .right {
     right: 210px;
