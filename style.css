@@ -66,7 +66,7 @@ nav {
 
 nav ul {
   display: flex;
-  font-size: 15px;
+  font-size: 1rem;
   max-width: 100%;
   width: 100%;
   z-index: 998;
@@ -78,7 +78,7 @@ nav ul li {
   text-transform: uppercase;
   color: var(--white);
   letter-spacing: 2px;
-  padding: 20px;
+  padding: 1.2rem;
 }
 nav ul li a {
   color: var(--white);
@@ -149,7 +149,7 @@ nav ul li a:hover {
 .slider-image {
   max-width: 20rem;
   width: 100%;
-  height: 400px;
+  height: 25rem;
   box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25);
   opacity: 0.7;
 }
@@ -166,7 +166,7 @@ nav ul li a:hover {
   top: 50%;
   color: var(--white);
   font-weight: bold;
-  font-size: 30px;
+  font-size: 2rem;
   transition: 0.6s ease;
 }
 .right {
@@ -202,11 +202,6 @@ nav ul li a:hover {
   }
 }
 
-.centeringabout {
-  text-align: center;
-  margin-right: 40px;
-  margin-left: 40px;
-}
 /* Container Basics */
 
 .container-basics {
@@ -219,7 +214,7 @@ nav ul li a:hover {
 /* Titles */
 .titles {
   font-size: 2.5rem;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.1rem;
   text-transform: uppercase;
   color: var(--white);
 }
@@ -375,7 +370,7 @@ nav ul li a:hover {
   font-size: 1.4rem;
   border-radius: 50px;
   background-color: var(--light-orange);
-  transition: opacity 0.3s ease-in;
+  transition: all 0.3s ease-in;
   opacity: 0;
 }
 
@@ -415,7 +410,6 @@ nav ul li a:hover {
 }
 
 /* Statistics */
-
 .statistics {
   display: flex;
   flex-direction: column;
@@ -429,7 +423,7 @@ nav ul li a:hover {
   background-size: cover;
   background-position: center center;
   opacity: 0.8;
-  height: 300px;
+  height: 20rem;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
@@ -555,16 +549,18 @@ footer section {
   justify-content: space-between;
   padding: 2rem;
   font-size: 1rem;
-  color: #989898;
+  color: var(--light-gray);
+  font-weight: 500;
 }
 
 .credit {
   display: flex;
   flex-direction: row;
   gap: 10px;
+  font-weight: 500;
 }
 .credit a {
   text-decoration: none;
-  color: #989898;
+  color: var(--light-gray);
 }
 /* Hamburger */
