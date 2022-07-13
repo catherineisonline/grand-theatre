@@ -1,5 +1,5 @@
 # Grand Theatre
-<img src="">
+<img src="https://github.com/catherineisonline/grand-theatre/blob/main/images/project-preview.png?raw=true">
 
 ## Grand Theatre is a minimalistic landing page for a theatre made with HTML, CSS & JavaScript
 
