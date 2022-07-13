@@ -37,7 +37,6 @@
       <section class="line">
         <i class="fas fa-minus"></i>
       </section>
-
       <section class="media">
         <span><a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a></span>
       </section>
@@ -212,49 +211,7 @@
         </p>
       </div>
     </footer>
-
-    <script type="text/javascript">
-      var slide_index = 1;
-      displaySlides(slide_index);
-      function nextSlide(n) {
-        displaySlides((slide_index += n));
-      }
-      function currentSlide(n) {
-        displaySlides((slide_index = n));
-      }
-      function displaySlides(n) {
-        var i;
-        var slides = document.getElementsByClassName("showSlide");
-        if (n > slides.length) {
-          slide_index = 1;
-        }
-        if (n < 1) {
-          slide_index = slides.length;
-        }
-        for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";
-        }
-        slides[slide_index - 1].style.display = "block";
-      }
-    </script>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-    <script type="text/javascript">
-      $('a[href*="#"]').on("click", function (e) {
-        e.preventDefault();
-
-        $("html, body").animate(
-          {
-            scrollTop: $($(this).attr("href")).offset().top,
-          },
-          500,
-          "linear"
-        );
-      });
-    </script>
-
-    <script src="javascript.js"></script>
+    <script src="app.js"></script>
 </body>
 
 </html>
