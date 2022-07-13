@@ -476,6 +476,9 @@ span.contact {
 }
 
 /* Contact */
+footer {
+  width: 100%;
+}
 .contact {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -552,57 +555,24 @@ input {
 }
 
 /* Footer */
-
-footer {
-  width: 100%;
-  max-width: 100%;
-}
-
-.line-b {
-  display: inline-flex;
-  width: 100%;
-  max-width: 100%;
-  border: 1px solid #565656;
-}
-.credit {
-  float: right;
-  margin-right: 25px;
-}
-
-.copyright {
-  float: right;
-}
-
-copyright,
-.credit {
-  font-family: Open Sans;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 12px;
+footer section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 2rem;
+  font-size: 1rem;
   color: #989898;
-  margin-left: 25px;
 }
 
-.credit .fa-mug-hot {
-  font-size: 12px;
-  color: #989898;
-  margin-right: 5px;
-  margin-left: 5px;
+.credit {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
 }
-
 .credit a {
-  font-size: 12px;
-  color: #d1a954;
   text-decoration: none;
+  color: #989898;
 }
-
-footer {
-  width: 100%;
-  max-width: 100%;
-  height: 50px;
-  position: relative;
-}
-
 /* HAMBURGER */
 
 @media (max-width: 767px) {
