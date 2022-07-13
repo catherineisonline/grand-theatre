@@ -50,7 +50,7 @@ nav {
 
 nav ul {
   display: flex;
-  position: relative;
+  /* position: relative; */
   font-size: 15px;
   font-family: "Open Sans Condensed", sans-serif;
   max-width: 100%;
@@ -227,45 +227,30 @@ nav ul li a:hover {
 }
 
 .panel-grid {
-  display: inline-grid;
-  grid-template-columns: repeat(5, 1fr);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 4rem;
   transform: rotate(-90deg);
-  position: absolute;
+  position: fixed;
+  z-index: 999;
   width: 100%;
-  max-width: 450px;
-  height: 800px;
-  margin-top: -200px;
-  left: 190px;
-  overflow: none;
-}
-
-span.contact,
-.line .fa-minus {
-  font-style: normal;
-  font-weight: bold;
+  top: -10%;
+  left: -45%;
   font-size: 1rem;
   text-transform: uppercase;
   color: #c4c4c4;
-  position: absolute;
   letter-spacing: 1px;
 }
 
-.line .fa-minus {
-  font-size: 1rem;
-}
-
-span.contact {
-  margin-left: -5rem;
-}
-
-.media .fa-facebook,
-.media .fa-instagram,
-.media .fa-twitter {
+.fa-facebook,
+.fa-instagram,
+.fa-twitter {
   color: #c4c4c4;
   font-size: 1.2rem;
 }
 
-.media .fa-facebook:hover,
+.fa-facebook:hover,
 .fa-instagram:hover,
 .fa-twitter:hover {
   transition: color 0.3sec ease-out;
@@ -573,66 +558,4 @@ footer section {
   text-decoration: none;
   color: #989898;
 }
-/* HAMBURGER */
-
-@media (max-width: 767px) {
-  #nav-ul {
-    display: none;
-    width: 100%;
-    flex-direction: column;
-    margin: 0;
-  }
-
-  ul#nav-ul.nav-ul.show {
-    display: flex;
-    position: relative;
-  }
-
-  nav {
-    position: relative;
-  }
-
-  #hamburger {
-    display: block;
-    margin-left: 200px;
-  }
-
-  nav ul.nav-ul > li a {
-    font-size: 15px;
-    padding: 9px;
-    text-transform: uppercase;
-  }
-
-  nav ul.nav-ul > li a:hover,
-  nav ul.nav-ul > li a:focus,
-  nav ul.nav-ul > li a.active {
-    background: none;
-    box-shadow: none;
-  }
-
-  nav ul.nav-ul > li a:hover {
-    border: 2px solid #fff;
-  }
-  .fas .fa-bars {
-    float: right;
-  }
-}
-
-/* HAMBURGER MENU */
-
-.hamburger {
-  background-color: transparent;
-  border: 0;
-  color: #fff;
-  cursor: pointer;
-  font-size: 20px;
-  display: none;
-}
-
-.hamburger:focus {
-  outline: none;
-}
-.fa-bars {
-  margin-top: 20px;
-  margin-left: 0;
-}
+/* Hamburger */
