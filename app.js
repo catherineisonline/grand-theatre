@@ -1,12 +1,11 @@
 //Hamburger Menu
-
 const hamburger = document.getElementById("hamburger");
 const navUl = document.getElementById("nav-ul");
 
 hamburger.addEventListener("click", () => {
-  navUl.classList.toggle("show");
+  navUl.classList.toggle("active");
 });
-//Slider 
+//Slider
 let slide_index = 1;
 displaySlides(slide_index);
 function nextSlide(n) {
